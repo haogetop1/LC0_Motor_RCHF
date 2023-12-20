@@ -418,6 +418,16 @@
               <FileType>1</FileType>
               <FilePath>..\Src\MyUART.c</FilePath>
             </File>
+            <File>
+              <FileName>FOC_kenal.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\FOC_kenal.c</FilePath>
+            </File>
+            <File>
+              <FileName>FOC_kernal.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Inc\FOC_kernal.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

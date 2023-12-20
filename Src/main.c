@@ -22,7 +22,9 @@
 #include "main.h"
 #include "fm33_assert.h"
 #include "MyUART.h"
+#include "FOC_kernal.h"
 
+extern float voltage_power;
 
 /**    
 * Chip Series: FM33LC0xx;
@@ -36,6 +38,7 @@
   
 int main(void)
 {
+	float angle_el=0;
     /* Initialize FL Driver Library */
     FL_Init();
 
@@ -54,24 +57,11 @@ int main(void)
 	Serial_SendString("hello");
 	
 	
-//	FL_ATIM_WriteCompareCH2(ATIM,50);
-//	FL_ATIM_WriteCompareCH3(ATIM,50);
+
     while(1)
     {     
-		FL_ATIM_WriteCompareCH1(ATIM,10);//设置占空比为10%
-		FL_ATIM_WriteCompareCH2(ATIM,0);
-		FL_ATIM_WriteCompareCH3(ATIM,0);
-		FL_DelayMs(8);
-		
-		FL_ATIM_WriteCompareCH1(ATIM,0);
-		FL_ATIM_WriteCompareCH2(ATIM,10);//设置占空比为10%
-		FL_ATIM_WriteCompareCH3(ATIM,0);
-		FL_DelayMs(8);
-		
-		FL_ATIM_WriteCompareCH1(ATIM,0);
-		FL_ATIM_WriteCompareCH2(ATIM,0);
-		FL_ATIM_WriteCompareCH3(ATIM,10);//设置占空比为10%
-		FL_DelayMs(8);
+		SetPhaseVoltage(1.2,0,angle_el);    //uq<2.
+		angle_el=angle_el+0.1;              //估计电角度
     }
 
 }

@@ -48,3 +48,4 @@
 .\objects\main.o: ../Drivers/FM33LC0xx_FL_Driver/Inc/fm33lc0xx_fl_wwdt.h
 .\objects\main.o: ../Inc/fm33_assert.h
 .\objects\main.o: ../Inc/MyUART.h
+.\objects\main.o: ../Inc/FOC_kernal.h

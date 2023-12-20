@@ -3,6 +3,7 @@
 ".\objects\mf_config.o"
 ".\objects\main.o"
 ".\objects\myuart.o"
+".\objects\foc_kenal.o"
 ".\objects\system_fm33lc0xx.o"
 ".\objects\fm33lc0xx_fl_exti.o"
 ".\objects\fm33lc0xx_fl_u7816.o"
