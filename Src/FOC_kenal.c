@@ -88,6 +88,6 @@ void SetPhaseVoltage(float Uq, float Ud, float angle_el)
 			Tc = 0;
 	}
 	FL_ATIM_WriteCompareCH1(ATIM,Ta*PWM_Period);
-	FL_ATIM_WriteCompareCH1(ATIM,Tb*PWM_Period);
-	FL_ATIM_WriteCompareCH1(ATIM,Tc*PWM_Period);
+	FL_ATIM_WriteCompareCH2(ATIM,Tb*PWM_Period);
+	FL_ATIM_WriteCompareCH3(ATIM,Tc*PWM_Period);
 }

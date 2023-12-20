@@ -39,6 +39,7 @@ extern float voltage_power;
 int main(void)
 {
 	float angle_el=0;
+	voltage_power=24;
     /* Initialize FL Driver Library */
     FL_Init();
 
@@ -62,6 +63,8 @@ int main(void)
     {     
 		SetPhaseVoltage(1.2,0,angle_el);    //uq<2.
 		angle_el=angle_el+0.1;              //¹À¼Æµç½Ç¶È
+		
+
     }
 
 }
