@@ -1,4 +1,6 @@
 #include "fm33lc0xx_fl.h"
+#include "stdarg.h"
+#include "stdio.h"
 
 uint8_t RxData;
 
@@ -49,7 +51,7 @@ void Serial_SendNumber(uint32_t Number, uint8_t Length)
 		Send_Byte(Number / Serial_Pow(10, Length - i - 1) % 10 + '0');
 	}
 }
-/*don't need reload
+
 int fputc(int ch, FILE *f)
 {
 	Send_Byte(ch);
@@ -65,7 +67,7 @@ void Serial_Printf(char *format, ...)
 	va_end(arg);
 	Serial_SendString(String);
 }
-*/
+
 
 void UART0_IRQHandler(void)
 {

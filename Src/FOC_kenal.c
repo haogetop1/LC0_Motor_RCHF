@@ -43,8 +43,15 @@ void SetPhaseVoltage(float Uq, float Ud, float angle_el)
 	if(Uref<-0.577)Uref=-0.577; 
 	
 	//判断参考电压矢量所在扇区：
-	angle_el = _normalizeAngle(angle_el+_PI_2);           //标准化电角度值【0,2pi】，加90度后是参考电压矢量的位置
-	sector = (angle_el / _PI_3) + 1; 
+	if(Uq>0)
+	{
+		angle_el = _normalizeAngle(angle_el+_PI_2);           //标准化电角度值【0,2pi】，加90度后是参考电压矢量的位置
+	}
+	else 
+	{
+		angle_el = _normalizeAngle(angle_el-_PI_2);
+	} 
+	sector = (angle_el / _PI_3) + 1;
 	
 	T1 = _SQRT3*sin(sector*_PI_3 - angle_el) * Uref;           //计算两个相邻电压矢量作用时间
 	T2 = _SQRT3*sin(angle_el - (sector-1.0)*_PI_3) * Uref;

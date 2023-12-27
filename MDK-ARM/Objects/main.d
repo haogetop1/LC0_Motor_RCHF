@@ -49,3 +49,4 @@
 .\objects\main.o: ../Inc/fm33_assert.h
 .\objects\main.o: ../Inc/MyUART.h
 .\objects\main.o: ../Inc/FOC_kernal.h
+.\objects\main.o: ../Inc/MyI2c.h

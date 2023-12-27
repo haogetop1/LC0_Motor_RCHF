@@ -1,0 +1,11 @@
+.\objects\as5600.o: ..\Src\AS5600.c
+.\objects\as5600.o: ../Inc/AS5600.h
+.\objects\as5600.o: ../Drivers/CMSIS/Device/FM/FM33xx/Include/fm33lc0xx.h
+.\objects\as5600.o: ../Drivers/CMSIS/Device/FM/FM33xx/Include/core_cm0plus.h
+.\objects\as5600.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\as5600.o: ../Drivers/CMSIS/Device/FM/FM33xx/Include/core_cminstr.h
+.\objects\as5600.o: ../Drivers/CMSIS/Device/FM/FM33xx/Include/core_cmfunc.h
+.\objects\as5600.o: ../Drivers/CMSIS/Device/FM/FM33xx/Include/system_fm33lc0xx.h
+.\objects\as5600.o: ../Drivers/CMSIS/Device/FM/FM33xx/Include/fm33lc0xx.h
+.\objects\as5600.o: ../Inc/MyI2C.h
+.\objects\as5600.o: ../Inc/MyUART.h

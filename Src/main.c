@@ -23,9 +23,16 @@
 #include "fm33_assert.h"
 #include "MyUART.h"
 #include "FOC_kernal.h"
+#include "MyI2c.h"
 
 extern float voltage_power;
 
+float angle_el=0;
+float angle=0;
+
+uint8_t buffer[2];
+
+float bsp_as5600GetAngle(void);
 /**    
 * Chip Series: FM33LC0xx;
 * FL Version: v2.3;
@@ -38,7 +45,6 @@ extern float voltage_power;
   
 int main(void)
 {
-	float angle_el=0;
 	voltage_power=24;
     /* Initialize FL Driver Library */
     FL_Init();
@@ -55,14 +61,22 @@ int main(void)
     //主控输出使能
     FL_ATIM_EnableALLOutput(ATIM);
 	
-	Serial_SendString("hello");
 	
 	
+	for(int i=0; i<500;i++)    //标定初始电角度
+	{
+		SetPhaseVoltage(2,0,-1.57);
+	}
 
+
+	
     while(1)
-    {     
-		SetPhaseVoltage(1.2,0,angle_el);    //uq<2.
-		angle_el=angle_el+0.1;              //估计电角度
+    {    
+		angle=bsp_as5600GetAngle();
+		angle_el=angle*7;
+		SetPhaseVoltage(1,0,angle_el);
+		
+		printf("angle==%f;\n",angle);
 		
 
     }

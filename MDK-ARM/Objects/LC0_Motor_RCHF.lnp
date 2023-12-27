@@ -4,6 +4,8 @@
 ".\objects\main.o"
 ".\objects\myuart.o"
 ".\objects\foc_kenal.o"
+".\objects\as5600.o"
+".\objects\myi2c.o"
 ".\objects\system_fm33lc0xx.o"
 ".\objects\fm33lc0xx_fl_exti.o"
 ".\objects\fm33lc0xx_fl_u7816.o"

@@ -41,3 +41,5 @@
 .\objects\myuart.o: ../Drivers/FM33LC0xx_FL_Driver/Inc/fm33lc0xx_fl_uart.h
 .\objects\myuart.o: ../Drivers/FM33LC0xx_FL_Driver/Inc/fm33lc0xx_fl_vref.h
 .\objects\myuart.o: ../Drivers/FM33LC0xx_FL_Driver/Inc/fm33lc0xx_fl_wwdt.h
+.\objects\myuart.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\myuart.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

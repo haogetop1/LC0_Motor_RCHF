@@ -202,7 +202,8 @@ void MF_I2C_MASTER_Init(void)
     I2C_InitStruct.clockSource = FL_RCC_I2C_CLK_SOURCE_RCHF;
     I2C_InitStruct.baudRate = 40000;
 
-    FL_I2C_MasterMode_Init(I2C, &I2C_InitStruct);    
+    FL_I2C_MasterMode_Init(I2C, &I2C_InitStruct); 
+
 }
  
 /**

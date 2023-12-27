@@ -428,6 +428,31 @@
               <FileType>5</FileType>
               <FilePath>..\Inc\FOC_kernal.h</FilePath>
             </File>
+            <File>
+              <FileName>AS5600.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\AS5600.c</FilePath>
+            </File>
+            <File>
+              <FileName>AS5600.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Inc\AS5600.h</FilePath>
+            </File>
+            <File>
+              <FileName>MyI2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\MyI2c.c</FilePath>
+            </File>
+            <File>
+              <FileName>MyI2c.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Inc\MyI2c.h</FilePath>
+            </File>
+            <File>
+              <FileName>MyUART.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Inc\MyUART.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
