@@ -44,7 +44,7 @@ I (../Drivers/FM33LC0xx_FL_Driver/Inc/fm33lc0xx_fl_u7816.h)(0x657957B6)
 I (../Drivers/FM33LC0xx_FL_Driver/Inc/fm33lc0xx_fl_uart.h)(0x657957B6)
 I (../Drivers/FM33LC0xx_FL_Driver/Inc/fm33lc0xx_fl_vref.h)(0x657957B6)
 I (../Drivers/FM33LC0xx_FL_Driver/Inc/fm33lc0xx_fl_wwdt.h)(0x657957B6)
-F (../Src/main.c)(0x658A8F76)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ../Drivers/CMSIS/Inculde -I ../Drivers/FM33LC0xx_FL_Driver/Inc -I ../Drivers/CMSIS/Device/FM/FM33xx/Include -I ../MF-config/Inc -I ../Inc-IE:\Users\16562\AppData\Local\Arm\Packs\FMSH\FM33LC0XX_DFP\3.0.4\Device\Include-IE:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DFM33LC0xx -DFM33LC0XX -DUSE_FULL_ASSERT-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (../Src/main.c)(0x658B7BC7)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ../Drivers/CMSIS/Inculde -I ../Drivers/FM33LC0xx_FL_Driver/Inc -I ../Drivers/CMSIS/Device/FM/FM33xx/Include -I ../MF-config/Inc -I ../Inc-IE:\Users\16562\AppData\Local\Arm\Packs\FMSH\FM33LC0XX_DFP\3.0.4\Device\Include-IE:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DFM33LC0xx -DFM33LC0XX -DUSE_FULL_ASSERT-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (../Inc/main.h)(0x64F3F338)
 I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
 I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
@@ -95,6 +95,7 @@ I (../Inc/fm33_assert.h)(0x657957B6)
 I (../Inc/MyUART.h)(0x65854EF0)
 I (../Inc/FOC_kernal.h)(0x65827CCC)
 I (../Inc/MyI2c.h)(0x6588D8D1)
+I (../Inc/AS5600.h)(0x658933B9)
 F (../Inc/fm33_assert.h)(0x657957B6)()
 F (..\Src\MyUART.c)(0x65854EF0)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ../Drivers/CMSIS/Inculde -I ../Drivers/FM33LC0xx_FL_Driver/Inc -I ../Drivers/CMSIS/Device/FM/FM33xx/Include -I ../MF-config/Inc -I ../Inc-IE:\Users\16562\AppData\Local\Arm\Packs\FMSH\FM33LC0XX_DFP\3.0.4\Device\Include-IE:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DFM33LC0xx -DFM33LC0XX -DUSE_FULL_ASSERT-o .\objects\myuart.o --omf_browse .\objects\myuart.crf --depend .\objects\myuart.d)
 I (../Drivers/FM33LC0xx_FL_Driver/Inc/fm33lc0xx_fl.h)(0x657957B6)
@@ -190,7 +191,7 @@ I (../Drivers/FM33LC0xx_FL_Driver/Inc/fm33lc0xx_fl_wwdt.h)(0x657957B6)
 I (../Inc/fm33_assert.h)(0x657957B6)
 I (E:\Keil_v5\ARM\ARMCC\include\math.h)(0x5EC77604)
 F (..\Inc\FOC_kernal.h)(0x65827CCC)()
-F (..\Src\AS5600.c)(0x658A94D6)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ../Drivers/CMSIS/Inculde -I ../Drivers/FM33LC0xx_FL_Driver/Inc -I ../Drivers/CMSIS/Device/FM/FM33xx/Include -I ../MF-config/Inc -I ../Inc-IE:\Users\16562\AppData\Local\Arm\Packs\FMSH\FM33LC0XX_DFP\3.0.4\Device\Include-IE:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DFM33LC0xx -DFM33LC0XX -DUSE_FULL_ASSERT-o .\objects\as5600.o --omf_browse .\objects\as5600.crf --depend .\objects\as5600.d)
+F (..\Src\AS5600.c)(0x658B7BC7)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ../Drivers/CMSIS/Inculde -I ../Drivers/FM33LC0xx_FL_Driver/Inc -I ../Drivers/CMSIS/Device/FM/FM33xx/Include -I ../MF-config/Inc -I ../Inc-IE:\Users\16562\AppData\Local\Arm\Packs\FMSH\FM33LC0XX_DFP\3.0.4\Device\Include-IE:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DFM33LC0xx -DFM33LC0XX -DUSE_FULL_ASSERT-o .\objects\as5600.o --omf_browse .\objects\as5600.crf --depend .\objects\as5600.d)
 I (../Inc/AS5600.h)(0x658933B9)
 I (../Drivers/CMSIS/Device/FM/FM33xx/Include/fm33lc0xx.h)(0x657957B6)
 I (../Drivers/CMSIS/Device/FM/FM33xx/Include/core_cm0plus.h)(0x657957B6)

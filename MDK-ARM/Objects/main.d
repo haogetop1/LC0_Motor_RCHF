@@ -50,3 +50,4 @@
 .\objects\main.o: ../Inc/MyUART.h
 .\objects\main.o: ../Inc/FOC_kernal.h
 .\objects\main.o: ../Inc/MyI2c.h
+.\objects\main.o: ../Inc/AS5600.h

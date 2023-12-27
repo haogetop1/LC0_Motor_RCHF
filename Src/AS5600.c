@@ -18,7 +18,8 @@ void bsp_as5600Init(void) {
 }
 
 
-uint16_t bsp_as5600GetRawAngle(void) {
+uint16_t bsp_as5600GetRawAngle(void) 
+{
   uint16_t raw_angle;
   uint8_t buffer[2] = {0};
   uint8_t raw_angle_register = AS5600_RAW_ANGLE_REGISTER;
@@ -42,7 +43,8 @@ uint16_t bsp_as5600GetRawAngle(void) {
   return raw_angle;
 }
 
-float bsp_as5600GetAngle(void) {
+float bsp_as5600GetAngle(void) 
+{
   float angle_data = bsp_as5600GetRawAngle();
   
   float d_angle = angle_data - angle_data_prev;

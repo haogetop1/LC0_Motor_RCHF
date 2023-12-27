@@ -24,6 +24,7 @@
 #include "MyUART.h"
 #include "FOC_kernal.h"
 #include "MyI2c.h"
+#include "AS5600.h"
 
 extern float voltage_power;
 
@@ -46,6 +47,7 @@ float bsp_as5600GetAngle(void);
 int main(void)
 {
 	voltage_power=24;
+	
     /* Initialize FL Driver Library */
     FL_Init();
 
@@ -61,7 +63,7 @@ int main(void)
     //主控输出使能
     FL_ATIM_EnableALLOutput(ATIM);
 	
-	
+	bsp_as5600Init();
 	
 	for(int i=0; i<500;i++)    //标定初始电角度
 	{
